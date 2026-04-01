@@ -21,5 +21,39 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    <!-- Core MCP -->
+    <dependency>
+      <groupId>org.springframework.experimental</groupId>
+      <artifactId>mcp</artifactId>
+    </dependency>
+
+    <!-- Optional: WebFlux SSE transport -->
+    <dependency>
+      <groupId>org.springframework.experimental</groupId>
+      <artifactId>mcp-webflux-sse-transport</artifactId>
+    </dependency>
+
+    <!-- Optional: WebMVC SSE transport -->
+    <dependency>
+      <groupId>org.springframework.experimental</groupId>
+      <artifactId>mcp-webmvc-sse-transport</artifactId>
+    </dependency>
+
+    <!-- Optional: Spring AI integration -->
+    <dependency>
+      <groupId>org.springframework.experimental</groupId>
+      <artifactId>spring-ai-mcp</artifactId>
+    </dependency>
   </dependencies>
+
+  <repositories>
+    <repository>
+      <id>spring-milestones</id>
+      <name>Spring Milestones</name>
+      <url>https://repo.spring.io/milestone</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
 </project>
